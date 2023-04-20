@@ -1,0 +1,35 @@
+<mat-tab-group >
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>supervisor_account</mat-icon>
+      Пользователи
+    </ng-template>
+    <app-users></app-users>
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <mat-icon>article</mat-icon>
+      Журнал безопасности
+    </ng-template>
+    <ng-container class="content">
+      <mat-form-field appearance="fill">
+        <mat-label>Textarea</mat-label>
+        <textarea matInput>
+        [2023-04-19 10:00:00] - Вход пользователя Андрей Лебедев, роль: Администратор
+[2023-04-19 10:02:30] - Выход пользователя Андрей Лебедев
+[2023-04-19 10:05:15] - Вход пользователя Александр Петров, роль: Механик
+[2023-04-19 10:06:20] - Взятие в работу Mitsubishi Eclipse ID - 1 пользователем Александр Петров
+[2023-04-19 10:50:00] - Окончание работы по задаче Mitsubishi Eclipse ID - 1 пользователем Александр Петров
+[2023-04-19 11:00:00] - Вход пользователя Иван Михайлов, роль: Механик
+[2023-04-19 11:05:00] - Взятие в работу задачи Ford Focus Classic ID - 2 пользователем Иван Михайлов
+[2023-04-19 12:15:00] - Окончание работы по задаче Ford Focus Classic ID - 2 пользователем Иван Михайлов
+[2023-04-19 12:23:00] - Неудачный вход по логину пользователя Константин Николаев
+[2023-04-19 12:24:00] - Неудачный вход по логину пользователя Константин Николаев. Блокировка пользователя Константин Николаев
+      </textarea>
+      </mat-form-field>
+      <button mat-button color="primary">Сохранить в файл</button>
+    </ng-container>
+
+  </mat-tab>
+</mat-tab-group>
