@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'app-table-wrapper',
@@ -7,4 +7,5 @@ import {Component, Input} from '@angular/core';
 })
 export class AbstractTableComponent {
   @Input() title: string = '';
+  @Output() openDialog: EventEmitter<any> = new EventEmitter();
 }

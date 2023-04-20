@@ -10,6 +10,7 @@ const DATA: Service[] = [
   {position: 1, name: "Диагностика подвески", price: '500'},
   {position: 2, name: "Замена задней стойки", price: '1500'},
   {position: 3,  name: "Проверка электрики", price: '350'},
+  {position: 4, name: "Замена сайлентблоков задней балки", price: '1500'}
 ];
 
 @Component({

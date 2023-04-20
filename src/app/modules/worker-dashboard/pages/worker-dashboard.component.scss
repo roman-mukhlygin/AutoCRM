@@ -1,17 +1,25 @@
-.auto-info {
-  display: block;
-  width: 400px;
-  height: 350px;
-}
+mat-grid-list {
 
-.autopart-card {
-  display: block;
-  width: 600px;
-  height: 450px;
-}
+  .auto-info {
+    display: block;
+    height: 450px;
+    width: 580px;
+  }
 
-.service-table {
-  display: block;
-  width: 400px;
-  height: 400px;
+  .autopart-card {
+    display: block;
+    height: 450px;
+    width: 580px;
+  }
+
+  .service-table {
+    display: block;
+    height: 450px;
+    width: 580px;
+  }
+
+  .control-buttons {
+    display: block;
+    width: 580px;
+  }
 }

@@ -1,15 +1,31 @@
-<app-dashboard-card class="auto-info">
-  <app-car-info></app-car-info>
-</app-dashboard-card>
 
-<app-dashboard-card class="autopart-card">
-  <app-table-wrapper [title]="'Запчасти'">
-    <app-autopart-table></app-autopart-table>
-  </app-table-wrapper>
-</app-dashboard-card>
+<mat-grid-list cols="3" rowHeight="50%">
+  <mat-grid-tile>
+    <app-dashboard-card class="auto-info">
+      <app-car-info></app-car-info>
+    </app-dashboard-card>
+  </mat-grid-tile>
 
-<app-dashboard-card class="service-table">
-  <app-table-wrapper [title]="'Услуги'">
-    <app-service-table></app-service-table>
-  </app-table-wrapper>
-</app-dashboard-card>
+  <mat-grid-tile>
+    <app-dashboard-card class="service-table">
+      <app-table-wrapper [title]="'Услуги'" (openDialog)="openServiceAddDialog()">
+        <app-service-table></app-service-table>
+      </app-table-wrapper>
+    </app-dashboard-card>
+  </mat-grid-tile>
+
+
+  <mat-grid-tile>
+    <app-dashboard-card class="autopart-card">
+      <app-table-wrapper [title]="'Запчасти'" (openDialog)="openAutopartAddDialog()">
+        <app-autopart-table></app-autopart-table>
+      </app-table-wrapper>
+    </app-dashboard-card>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <app-dashboard-card class="control-buttons">
+      <app-controls></app-controls>
+    </app-dashboard-card>
+  </mat-grid-tile>
+</mat-grid-list>

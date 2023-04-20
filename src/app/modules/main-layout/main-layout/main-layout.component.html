@@ -1,9 +1,9 @@
 <mat-sidenav-container autosize>
-  <mat-sidenav #drawer mode="side">
+  <mat-sidenav #drawer mode="over">
     <nav>
-      <button mat-button (click)="drawer.close()" routerLink="dashboard"><mat-icon>speed</mat-icon>Dashboard</button>
-      <button mat-button (click)="drawer.close()" routerLink="kanban"><mat-icon>table_rows</mat-icon>Kanban</button>
-      <button mat-button><mat-icon>settings</mat-icon>Settings</button>
+      <button mat-button (click)="drawer.close()" routerLink="dashboard"><mat-icon>speed</mat-icon>Панель авто</button>
+      <button mat-button (click)="drawer.close()" routerLink="kanban"><mat-icon>table_rows</mat-icon>Канбан</button>
+      <button mat-button (click)="drawer.close()" routerLink="settings"><mat-icon>settings</mat-icon>Настройки</button>
     </nav>
   </mat-sidenav>
   <mat-sidenav-content>

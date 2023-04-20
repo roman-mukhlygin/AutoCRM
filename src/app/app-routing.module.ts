@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {MainLayoutComponent} from "./modules/main-layout/main-layout/main-layout.component";
 import {WorkerDashboardComponent} from "./modules/worker-dashboard/pages/worker-dashboard.component";
 import {KanbanAdminComponent} from "./modules/kanban-admin/kanban-admin.component";
+import {SettingsComponent} from "./modules/settings/settings.component";
 
 
 const routes: Routes = [
@@ -17,6 +18,10 @@ const routes: Routes = [
       {
         path: 'kanban',
         component: KanbanAdminComponent
+      },
+      {
+        path: 'settings',
+        component: SettingsComponent
       }
     ]
   }

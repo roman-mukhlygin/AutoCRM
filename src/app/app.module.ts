@@ -7,6 +7,7 @@ import {MainLayoutModule} from "./modules/main-layout/main-layout.module";
 import {WorkerDashboardModule} from "./modules/worker-dashboard/worker-dashboard.module";
 import { KanbanModule } from '@syncfusion/ej2-angular-kanban';
 import {KanbanAdminModule} from "./modules/kanban-admin/kanban-admin.module";
+import {SettingsModule} from "./modules/settings/settings.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {KanbanAdminModule} from "./modules/kanban-admin/kanban-admin.module";
     MainLayoutModule,
     WorkerDashboardModule,
     KanbanModule,
-    KanbanAdminModule
+    KanbanAdminModule,
+    SettingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
